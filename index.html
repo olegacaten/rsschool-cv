@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Oleg Makarov | rsschool-cv</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Oleg Makarov" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://olegacaten.github.io/rsschool-cv/cv.html" />
+<meta property="og:url" content="https://olegacaten.github.io/rsschool-cv/cv.html" />
+<meta property="og:site_name" content="rsschool-cv" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Oleg Makarov" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Oleg Makarov","url":"https://olegacaten.github.io/rsschool-cv/cv.html"}</script>
+
+    <link rel="stylesheet" href="/rsschool-cv/assets/css/style.css?v=a2e36a4f27d53ff03fa3ec061680c164311fc438">
+
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://olegacaten.github.io/rsschool-cv/">rsschool-cv</a></h1>
+      
+
+      <h1 id="oleg-makarov"><strong>Oleg Makarov</strong></h1>
+
+<h2 id="front-end-developer"><strong>Front-end Developer</strong></h2>
+<hr />
+<h3 id="contact-information">Contact information:</h3>
+
+<p><strong>Phone:</strong> +995 557 66 44 69</p>
+
+<p><strong>E-mail:</strong> olegmakarovach.job@gmail.com</p>
+
+<p><strong>Telegram:</strong> @olegacat</p>
+
+<p><a href="https://www.linkedin.com/in/oleg-makarov-6a0789266/">LinkedIn</a></p>
+
+<p><a href="https://github.com/olegacaten">Github</a></p>
+
+<h2 id="about-me">About me</h2>
+
+<p>I am dedicated and passionate web developer, who wants to create dynamic, useful apps that will provide, best experience and will help for people to reach their goals. I continuously improve my skills and study every day to make high-quality solutions.</p>
+
+<h2 id="technical-skills">Technical Skills</h2>
+
+<p><strong>Front-End</strong></p>
+<ul>
+  <li>HTML, CSS, SCSS</li>
+  <li>React, React Native</li>
+  <li>JavaScript, TypeScript</li>
+  <li>Redux</li>
+  <li>MUI, Boostrap</li>
+</ul>
+
+<p><strong>Back-End</strong></p>
+<ul>
+  <li>PHP, SoketIO, GraphQL</li>
+  <li>MySQL, MongoDB, Supabase</li>
+</ul>
+
+<p><strong>Tools and Methologies</strong></p>
+<ul>
+  <li>Figma, MVC, PS, AI, Postman, Git</li>
+</ul>
+
+<p><strong>Languages</strong></p>
+<ul>
+  <li>English C1</li>
+  <li>Russian Native</li>
+</ul>
+
+<h2 id="code-examples">Code examples</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Talk bridges code:
+
+const http = require('http');
+const socketIO = require('socket.io');
+const server = http.createServer();
+    const io = socketIO(server);
+
+    io.on('connection', socket =&gt; {
+    let room = '';
+
+    socket.on('join', chatId =&gt; {
+        room = chatId;
+        console.log(chatId);
+        socket.join(chatId);
+    });
+
+    socket.on('send_message', message =&gt; {
+      io.to(room).emit('get_message', message);
+    });
+
+    // Обработчик отключения клиента
+    socket.on('disconnect', () =&gt; {
+        console.log('Client disconnected');
+    });
+});
+
+const port = process.env.PORT || 8082;
+    server.listen(port, () =&gt; {
+    console.log(`Server listening on port ${port}`);
+});
+
+const os = require('os');
+const { networkInterfaces } = os;
+
+// Get a list of network interfaces
+const interfaces = networkInterfaces();
+
+// Filter for IPv4 addresses
+const ipv4Addresses = {};
+
+for (const name of Object.keys(interfaces)) {
+  for (const iface of interfaces[name]) {
+    if (iface.family === 'IPv4' &amp;&amp; !iface.internal) {
+      ipv4Addresses[name] = iface.address;
+    }
+  }
+}
+
+console.log(ipv4Addresses);
+</code></pre></div></div>
+<h1 id="work-experience">Work Experience</h1>
+
+<h3 id="student-website">Student Website</h3>
+<ul>
+  <li><strong>Description:</strong> Build Feed page.</li>
+  <li><strong>Stacks:</strong> React, SCSS, JS, Feature-Sliced Design</li>
+</ul>
+
+<h3 id="ama-group-website-for-advertisement-company">Ama Group, Website for advertisement company</h3>
+<ul>
+  <li><strong>Description:</strong> Build and maintained the website for a client, messages send directly to telegram bot for the client.</li>
+  <li><strong>Stacks:</strong> JS, jQuery, PHP, CSS, HTML</li>
+</ul>
+
+<h3 id="chat-application">Chat Application</h3>
+<ul>
+  <li><strong>Description:</strong> Simple chat, with privat chats and group chats.</li>
+  <li><strong>Stacks:</strong> React, CSS, Redux, SoketIO, PHP</li>
+</ul>
+
+  </body>
+</html>
