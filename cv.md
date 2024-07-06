@@ -42,14 +42,15 @@ I am dedicated and passionate web developer, who wants to create dynamic, useful
 
 ## Code examples 
 
-`Talk bridges code:
+```
+Talk bridges code:
 
 const http = require('http');
 const socketIO = require('socket.io');
 const server = http.createServer();
-const io = socketIO(server);
+    const io = socketIO(server);
 
-io.on('connection', socket => {
+    io.on('connection', socket => {
     let room = '';
 
     socket.on('join', chatId => {
@@ -91,7 +92,7 @@ for (const name of Object.keys(interfaces)) {
 }
 
 console.log(ipv4Addresses);
-`
+```
 # Work Experience 
 
 ### Student Website
