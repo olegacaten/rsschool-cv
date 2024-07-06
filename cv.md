@@ -1,7 +1,7 @@
 # **Oleg Makarov**
 
 ## **Front-end Developer**
-
+---
 ### Contact information:
 
 **Phone:** +995 557 66 44 69
@@ -14,7 +14,7 @@
 
 [Github](https://github.com/olegacaten)
 
----
+
 
 ## About me
 
@@ -42,8 +42,7 @@ I am dedicated and passionate web developer, who wants to create dynamic, useful
 
 ## Code examples 
 
-`
-Talk bridges code:
+`Talk bridges code:
 
 const http = require('http');
 const socketIO = require('socket.io');
